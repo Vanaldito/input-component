@@ -12,14 +12,12 @@ export default function Input({
   label = "Label",
   ...inputAttributes
 }: InputProps) {
-  const className = inputAttributes.className
-    ? `${inputAttributes.className} input`
-    : "input";
+  const className = "input-component";
 
   return (
-    <label className="label">
+    <label className={className}>
       {label}
-      <input {...inputAttributes} className={className} />
+      <input {...inputAttributes} />
     </label>
   );
 }
