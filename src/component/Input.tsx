@@ -6,13 +6,17 @@ interface InputProps
     HTMLInputElement
   > {
   label?: string;
+  error?: boolean;
 }
 
 export default function Input({
   label = "Label",
+  error = false,
   ...inputAttributes
 }: InputProps) {
-  const className = "input-component";
+  let className = "input-component";
+
+  className += error ? " input-component--error" : "";
 
   return (
     <label className={className}>
