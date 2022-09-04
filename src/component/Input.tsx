@@ -1,14 +1,25 @@
 import "./Input.css";
 
+interface InputProps
+  extends React.DetailedHTMLProps<
+    React.InputHTMLAttributes<HTMLInputElement>,
+    HTMLInputElement
+  > {
+  label?: string;
+}
+
 export default function Input({
+  label = "Label",
   ...inputAttributes
-}: React.DetailedHTMLProps<
-  React.InputHTMLAttributes<HTMLInputElement>,
-  HTMLInputElement
->) {
+}: InputProps) {
   const className = inputAttributes.className
     ? `${inputAttributes.className} input`
     : "input";
 
-  return <input {...inputAttributes} className={className} />;
+  return (
+    <label className="label">
+      {label}
+      <input {...inputAttributes} className={className} />
+    </label>
+  );
 }

@@ -1,3 +1,11 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  font-size: 1.2rem;
+  gap: 5px;
+}
+
 .input {
   padding: 18px 12px;
   font-size: 1.4rem;
