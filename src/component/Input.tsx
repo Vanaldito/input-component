@@ -1,3 +1,8 @@
-export default function Input() {
-  return <input type="text" />;
+export default function Input({
+  ...inputAttributes
+}: React.DetailedHTMLProps<
+  React.InputHTMLAttributes<HTMLInputElement>,
+  HTMLInputElement
+>) {
+  return <input {...inputAttributes} />;
 }
