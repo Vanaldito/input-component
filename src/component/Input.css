@@ -1,43 +1,80 @@
+.input-component--color-default {
+  --fg-color: #333333;
+  --bg-color: #ffffff;
+  --border-color: #828282;
+  --placeholder-color: #828282;
+  --label-color: #333333;
+  --helper-text-color: #828282;
+}
+
+.input-component--color-primary {
+  --fg-color: #0000ff;
+  --bg-color: #ffffff;
+  --border-color: #2962ff;
+  --placeholder-color: #2962ffaa;
+  --label-color: #2962ff;
+  --helper-text-color: #2962ffee;
+}
+
+.input-component--color-secondary {
+  --fg-color: #333333;
+  --bg-color: #ffffff;
+  --border-color: #455a64;
+  --placeholder-color: #455a64aa;
+  --label-color: #455a64;
+  --helper-text-color: #455a64ee;
+}
+
+.input-component--color-danger {
+  --fg-color: #a32f2f;
+  --bg-color: #ffffff;
+  --border-color: #d32f2f;
+  --placeholder-color: #d32f2faa;
+  --label-color: #d32f2f;
+  --helper-text-color: #d32f2fee;
+}
+
 .input-component {
   display: flex;
   flex-direction: column;
   width: max-content;
   font-size: 1.2rem;
   gap: 5px;
+  color: var(--label-color);
 }
 
 .input-component input {
   font-size: 1.4rem;
-  border: 1px solid #828282;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
-  color: #333333;
+  color: var(--fg-color);
+  background-color: var(--bg-color);
 }
 
 .input-component input::placeholder {
-  color: #828282;
+  color: var(--placeholder-color);
 }
 
 .input-component--error {
-  color: #d32f2f;
+  --label-color: #d32f2f;
+  --border-color: #d32f2f;
+  --helper-text-color: #d32f2f;
+  --fg-color: #f32f2f;
+  --placeholder-color: #d32f2f99;
 }
 
-.input-component--error input {
-  border-color: #d32f2f;
+.input-component--disabled {
+  --border-color: #e0e0e0;
+  --bg-color: #f2f2f2;
 }
 
 .input-component--disabled input {
-  border: 1px solid #e0e0e0;
-  background-color: #f2f2f2;
   cursor: not-allowed;
 }
 
 .input-component .helper-text {
+  color: var(--helper-text-color);
   font-size: 1.2rem;
-  color: #828282;
-}
-
-.input-component--error .helper-text {
-  color: #d32f2f;
 }
 
 .input-component--size-md input {

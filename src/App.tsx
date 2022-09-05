@@ -9,22 +9,25 @@ export default function App() {
         type="text"
         placeholder="Placeholder"
         helperText="Some interesting text"
-        startIcon="phone"
-        size="sm"
+        color="default"
       />
       <Input
         type="text"
         placeholder="Placeholder"
         helperText="Some interesting text"
-        startIcon="phone"
-        size="md"
+        color="primary"
       />
       <Input
         type="text"
         placeholder="Placeholder"
         helperText="Some interesting text"
-        endIcon="lock"
-        size="lg"
+        color="secondary"
+      />
+      <Input
+        type="text"
+        placeholder="Placeholder"
+        helperText="Some interesting text"
+        color="danger"
       />
     </div>
   );

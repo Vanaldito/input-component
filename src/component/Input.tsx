@@ -14,6 +14,7 @@ interface InputProps
   disabled?: boolean;
   helperText?: string;
   size?: "sm" | "md" | "lg";
+  color?: "default" | "primary" | "secondary" | "danger";
   startIcon?: string;
   endIcon?: string;
 }
@@ -24,6 +25,7 @@ export default function Input({
   disabled = false,
   helperText = "",
   size = "md",
+  color = "default",
   startIcon,
   endIcon,
   ...inputAttributes
@@ -35,6 +37,7 @@ export default function Input({
   className += startIcon ? " input-component--with-start-icon" : "";
   className += endIcon ? " input-component--with-end-icon" : "";
   className += ` input-component--size-${size}`;
+  className += ` input-component--color-${color}`;
 
   return (
     <label className={className}>
