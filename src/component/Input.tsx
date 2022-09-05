@@ -8,12 +8,14 @@ interface InputProps
   label?: string;
   error?: boolean;
   disabled?: boolean;
+  helperText?: string;
 }
 
 export default function Input({
   label = "Label",
   error = false,
   disabled = false,
+  helperText = "",
   ...inputAttributes
 }: InputProps) {
   let className = "input-component";
@@ -25,6 +27,7 @@ export default function Input({
     <label className={className}>
       {label}
       <input {...inputAttributes} disabled={disabled} />
+      <span className="helper-text">{helperText}</span>
     </label>
   );
 }

@@ -31,3 +31,12 @@
   background-color: #f2f2f2;
   cursor: not-allowed;
 }
+
+.input-component .helper-text {
+  font-size: 1.2rem;
+  color: #828282;
+}
+
+.input-component--error .helper-text {
+  color: #d32f2f;
+}

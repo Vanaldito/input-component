@@ -5,8 +5,17 @@ import "./App.css";
 export default function App() {
   return (
     <div className="inputs">
-      <Input type="text" placeholder="Placeholder" />
-      <Input placeholder="Placeholder" disabled />
+      <Input
+        type="text"
+        placeholder="Placeholder"
+        helperText="Some interesting text"
+      />
+      <Input
+        type="text"
+        placeholder="Placeholder"
+        helperText="Some interesting text"
+        error
+      />
     </div>
   );
 }
