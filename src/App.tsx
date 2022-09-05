@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="inputs">
       <Input type="text" placeholder="Placeholder" />
-      <Input placeholder="Placeholder" error />
+      <Input placeholder="Placeholder" disabled />
     </div>
   );
 }

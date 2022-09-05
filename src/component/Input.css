@@ -25,3 +25,9 @@
 .input-component--error input {
   border-color: #d32f2f;
 }
+
+.input-component--disabled input {
+  border: 1px solid #e0e0e0;
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
