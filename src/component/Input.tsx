@@ -2,14 +2,18 @@ import { EndIcon, StartIcon } from "./Icon";
 import "./Input.css";
 
 interface InputProps
-  extends React.DetailedHTMLProps<
-    React.InputHTMLAttributes<HTMLInputElement>,
-    HTMLInputElement
+  extends Omit<
+    React.DetailedHTMLProps<
+      React.InputHTMLAttributes<HTMLInputElement>,
+      HTMLInputElement
+    >,
+    "size"
   > {
   label?: string;
   error?: boolean;
   disabled?: boolean;
   helperText?: string;
+  size?: "sm" | "md" | "lg";
   startIcon?: string;
   endIcon?: string;
 }
@@ -19,6 +23,7 @@ export default function Input({
   error = false,
   disabled = false,
   helperText = "",
+  size = "md",
   startIcon,
   endIcon,
   ...inputAttributes
@@ -29,6 +34,7 @@ export default function Input({
   className += disabled ? " input-component--disabled" : "";
   className += startIcon ? " input-component--with-start-icon" : "";
   className += endIcon ? " input-component--with-end-icon" : "";
+  className += ` input-component--size-${size}`;
 
   return (
     <label className={className}>
