@@ -1,0 +1,15 @@
+.icon {
+  color: #828282;
+}
+
+.start-icon {
+  z-index: 10;
+  position: absolute;
+  left: 10px;
+}
+
+.end-icon {
+  z-index: 10;
+  position: absolute;
+  right: 10px;
+}

@@ -40,3 +40,17 @@
 .input-component--error .helper-text {
   color: #d32f2f;
 }
+
+.input-component--with-start-icon input {
+  padding-left: 36px;
+}
+
+.input-component--with-end-icon input {
+  padding-right: 36px;
+}
+
+.input-component .field {
+  display: flex;
+  align-items: center;
+  position: relative;
+}

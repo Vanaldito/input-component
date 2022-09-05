@@ -9,12 +9,13 @@ export default function App() {
         type="text"
         placeholder="Placeholder"
         helperText="Some interesting text"
+        startIcon="phone"
       />
       <Input
         type="text"
         placeholder="Placeholder"
         helperText="Some interesting text"
-        error
+        endIcon="lock"
       />
     </div>
   );
