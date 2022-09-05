@@ -102,3 +102,8 @@
   align-items: center;
   position: relative;
 }
+
+.input-component--full-width,
+.input-component--full-width input {
+  width: 100%;
+}

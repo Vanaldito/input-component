@@ -15,6 +15,7 @@ interface InputProps
   helperText?: string;
   size?: "sm" | "md" | "lg";
   color?: "default" | "primary" | "secondary" | "danger";
+  fullWidth?: boolean;
   startIcon?: string;
   endIcon?: string;
 }
@@ -26,6 +27,7 @@ export default function Input({
   helperText = "",
   size = "md",
   color = "default",
+  fullWidth = false,
   startIcon,
   endIcon,
   ...inputAttributes
@@ -38,6 +40,7 @@ export default function Input({
   className += endIcon ? " input-component--with-end-icon" : "";
   className += ` input-component--size-${size}`;
   className += ` input-component--color-${color}`;
+  className += fullWidth ? " input-component--full-width" : "";
 
   return (
     <label className={className}>

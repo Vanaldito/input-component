@@ -9,25 +9,12 @@ export default function App() {
         type="text"
         placeholder="Placeholder"
         helperText="Some interesting text"
-        color="default"
       />
       <Input
         type="text"
         placeholder="Placeholder"
         helperText="Some interesting text"
-        color="primary"
-      />
-      <Input
-        type="text"
-        placeholder="Placeholder"
-        helperText="Some interesting text"
-        color="secondary"
-      />
-      <Input
-        type="text"
-        placeholder="Placeholder"
-        helperText="Some interesting text"
-        color="danger"
+        fullWidth
       />
     </div>
   );
