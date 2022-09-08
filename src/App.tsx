@@ -6,18 +6,27 @@ export default function App() {
   return (
     <div className="inputs">
       <Input
+        type="text"
         placeholder="Placeholder"
         helperText="Some interesting text"
-        multiline
-        rows={4}
       />
       <Input
+        type="text"
         placeholder="Placeholder"
         helperText="Some interesting text"
-        fullWidth
-        multiline
-        rows={5}
-        disabled
+        color="primary"
+      />
+      <Input
+        type="text"
+        placeholder="Placeholder"
+        helperText="Some interesting text"
+        color="secondary"
+      />
+      <Input
+        type="text"
+        placeholder="Placeholder"
+        helperText="Some interesting text"
+        color="danger"
       />
     </div>
   );

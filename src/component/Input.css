@@ -7,6 +7,16 @@
   --helper-text-color: #828282;
 }
 
+.input-component--color-default:hover,
+.input-component--color-default:focus-within {
+  --border-color: #222222;
+}
+
+.input-component--color-default:focus-within {
+  --label-color: #222222;
+  --helper-text-color: #222222;
+}
+
 .input-component--color-primary {
   --fg-color: #0000ff;
   --bg-color: #ffffff;
@@ -14,6 +24,16 @@
   --placeholder-color: #2962ffaa;
   --label-color: #2962ff;
   --helper-text-color: #2962ffee;
+}
+
+.input-component--color-primary:hover,
+.input-component--color-primary:focus-within {
+  --border-color: #2942bf;
+}
+
+.input-component--color-primary:focus-within {
+  --label-color: #2942cf;
+  --helper-text-color: #2942cf;
 }
 
 .input-component--color-secondary {
@@ -25,6 +45,16 @@
   --helper-text-color: #455a64ee;
 }
 
+.input-component--color-secondary:hover,
+.input-component--color-secondary:focus-within {
+  --border-color: #000000;
+}
+
+.input-component--color-secondary:focus-within {
+  --label-color: #000000;
+  --helper-text-color: #000000;
+}
+
 .input-component--color-danger {
   --fg-color: #a32f2f;
   --bg-color: #ffffff;
@@ -32,6 +62,16 @@
   --placeholder-color: #d32f2faa;
   --label-color: #d32f2f;
   --helper-text-color: #d32f2fee;
+}
+
+.input-component--color-danger:hover,
+.input-component--color-danger:focus-within {
+  --border-color: #931f1f;
+}
+
+.input-component--color-danger:focus-within {
+  --label-color: #931f1f;
+  --helper-text-color: #931f1f;
 }
 
 .input-component {
@@ -47,6 +87,7 @@
 .input-component textarea {
   font-size: 1.4rem;
   border: 1px solid var(--border-color);
+  outline: none;
   border-radius: 8px;
   color: var(--fg-color);
   background-color: var(--bg-color);
