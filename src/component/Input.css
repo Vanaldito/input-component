@@ -43,7 +43,8 @@
   color: var(--label-color);
 }
 
-.input-component input {
+.input-component input,
+.input-component textarea {
   font-size: 1.4rem;
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -51,7 +52,8 @@
   background-color: var(--bg-color);
 }
 
-.input-component input::placeholder {
+.input-component input::placeholder,
+.input-component textarea::placeholder {
   color: var(--placeholder-color);
 }
 
@@ -68,7 +70,8 @@
   --bg-color: #f2f2f2;
 }
 
-.input-component--disabled input {
+.input-component--disabled input,
+.input-component--disabled textarea {
   cursor: not-allowed;
 }
 
@@ -77,23 +80,28 @@
   font-size: 1.2rem;
 }
 
-.input-component--size-md input {
+.input-component--size-md input,
+.input-component--size-md textarea {
   padding: 18px 12px;
 }
 
-.input-component--size-sm input {
+.input-component--size-sm input,
+.input-component--size-sm textarea {
   padding: 10px 12px;
 }
 
-.input-component--size-lg input {
+.input-component--size-lg input,
+.input-component--size-lg textarea {
   padding: 22px 12px;
 }
 
-.input-component--with-start-icon input {
+.input-component--with-start-icon input,
+.input-component--with-start-icon textarea {
   padding-left: 36px;
 }
 
-.input-component--with-end-icon input {
+.input-component--with-end-icon input,
+.input-component--with-end-icon textarea {
   padding-right: 36px;
 }
 
@@ -104,6 +112,7 @@
 }
 
 .input-component--full-width,
-.input-component--full-width input {
+.input-component--full-width input,
+.input-component--full-width textarea {
   width: 100%;
 }
