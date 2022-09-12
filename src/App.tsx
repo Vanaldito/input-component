@@ -1,4 +1,4 @@
-import Input from "./component/Input";
+import Input from "./components/Input";
 
 import "./App.css";
 
