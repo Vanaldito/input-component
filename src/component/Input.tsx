@@ -34,7 +34,7 @@ type TextAreaPropsAllowed = Omit<
 >;
 
 interface MultiLineInputProps extends TextAreaPropsAllowed, SharedInputProps {
-  multiline: true;
+  multiline?: true;
 }
 
 export default function Input({
